@@ -10,10 +10,10 @@ public class ShakeHandService {
     public ShakeHandResponse getShakeHandResult(ShakeHandRequest shakeHandRequest) {
         ShakeHandResponse shakeHandResponse = new ShakeHandResponse();
         if (shakeHandRequest.getName().equalsIgnoreCase(shakeHandRequest.getShakeHandTo())) {
-            shakeHandResponse.setShaked(false);
+            shakeHandResponse.setIsShaked(false);
             shakeHandResponse.setMessage("You can't say hi to yourself.");
         } else {
-            shakeHandResponse.setShaked(true);
+            shakeHandResponse.setIsShaked(true);
             shakeHandResponse.setMessage("Hello " + shakeHandRequest.getName() + ", nice to meet you.");
         }
         return shakeHandResponse;

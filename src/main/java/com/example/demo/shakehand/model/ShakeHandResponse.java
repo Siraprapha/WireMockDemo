@@ -7,6 +7,6 @@ import java.io.Serializable;
 
 @Data
 public class ShakeHandResponse implements Serializable {
-    boolean isShaked;
+    Boolean isShaked;
     String message;
 }

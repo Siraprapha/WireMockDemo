@@ -29,7 +29,7 @@ public class SayHiService {
 
         assert shakeHandResponse != null;
         return SayHiResponse.builder()
-                .isShaked(shakeHandResponse.isShaked())
+                .isShaked(shakeHandResponse.getIsShaked())
                 .message(shakeHandResponse.getMessage())
                 .build();
     }

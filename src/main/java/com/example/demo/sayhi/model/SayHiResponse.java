@@ -8,6 +8,6 @@ import java.io.Serializable;
 @Data
 @Builder
 public class SayHiResponse implements Serializable {
-    boolean isShaked;
+    Boolean isShaked;
     String message;
 }
